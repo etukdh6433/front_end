@@ -88,10 +88,10 @@
                     <div class="text-bg">
                      <span>Welcome To Aller View</span>
                       <h1>Allergy-Care Shop</h1>
-                      <form class="Vegetable">
-                        <input class="Vegetable_fom" placeholder="원하는 상품을 검색해보세요!" type="text" name=" Vegetable">
-                        <a class="Search_btn" href="{% url 'search' %}">search</a>
-                        <!-- <button class="Search_btn" onclick="location.href={% url 'search' %}">Search</button> -->
+                      <form class="Vegetable" action="{% url 'searchapp:searchResult' %}" method="get">
+                        <input class="Vegetable_fom" placeholder="원하는 상품을 검색해보세요!" type="text" name="kw">
+                        <button class="Search_btn">search</button>
+                        
                       </form>
                     </div>
                   </div>

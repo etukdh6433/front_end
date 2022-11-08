@@ -79,9 +79,10 @@
     <br>
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
       <div style="margin: 100px 30% 10px;">
-        <form class="Vegetable">
-          <input class="Vegetable_fom" placeholder="원하는 상품을 검색해보세요!" type="text" name=" Vegetable">
-          <a class="Search_btn" href="{% url 'search' %}">search</a>
+        <form class="Vegetable" action="{% url 'searchapp:searchResult' %}" method="get">
+          <input class="Vegetable_fom" placeholder="원하는 상품을 검색해보세요!" type="text" name="kw">
+          <button class="Search_btn">search</button>
+          
         </form>
       </div>   
     </div>
