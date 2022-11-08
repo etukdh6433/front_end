@@ -17,11 +17,17 @@ from django.contrib import admin
 from django.urls import path, include
 from mainapp import views as mainviews
 from searchapp import views as searchviews
+from board import views as boardviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainviews.home, name='home'),
     path('about/', mainviews.about, name='about'),
+<<<<<<< HEAD
     # path('search/', searchviews.searchResult, name='search'),
     path('search/', include('searchapp.urls')),
+=======
+    path('search/', searchviews.search, name='search'),
+    path('board/', boardviews.board, name='board')
+>>>>>>> 2ae00448a1a0ecf213c70292a084aae664c2caee
 ]
