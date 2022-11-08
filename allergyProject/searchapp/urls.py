@@ -5,4 +5,5 @@ app_name = 'searchapp'
 
 urlpatterns = [
     path('', searchviews.searchResult, name='searchResult'),
-]    
+]
+
