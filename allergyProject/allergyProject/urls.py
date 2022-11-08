@@ -23,11 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainviews.home, name='home'),
     path('about/', mainviews.about, name='about'),
-<<<<<<< HEAD
     # path('search/', searchviews.searchResult, name='search'),
     path('search/', include('searchapp.urls')),
-=======
-    path('search/', searchviews.search, name='search'),
-    path('board/', boardviews.board, name='board')
->>>>>>> 2ae00448a1a0ecf213c70292a084aae664c2caee
+    path('board/', boardviews.board, name='board'),
 ]
