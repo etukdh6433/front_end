@@ -1046,13 +1046,14 @@ font-weight: bold;
 
 }
  .Search_btn {
-    padding: 10px 0px;
+    padding: 13px 10px;
+    padding-bottom: 17px;
     border: #1a1b19 solid 1px;
      background: #1a1b19;
      color: #fff;
      margin-left: -5px;
      font-weight: 500;
-     font-size: 30px;
+     font-size: 25px;
      max-width: 194px;
      width: 100%;
 
@@ -1070,11 +1071,12 @@ font-weight: bold;
 
 
  .text-bg a {
-     font-size: 16px;
+     font-size: 25px;
 border: #1a1b19 solid 1px;
 background-color: #1a1b19;
 color: #fff;
-padding: 9px 0px;
+padding: 8px 0px;
+padding-bottom: 12px;
 max-width: 171px;
 width: 100%;
 display: inline-block;
@@ -1387,9 +1389,8 @@ font-weight: normal;
     background: rgb(154, 195, 219);
     position: fixed;
     top: 0;
-    left: 0;
+    left: 20px;
     width: 225px;
-    height: 50%;
     margin-top:10%;
     padding: 20px 0;
     transition: all 0.5s ease;
