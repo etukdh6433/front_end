@@ -50,7 +50,7 @@
               <div class="full">
                 <div class="center-desk">
                   <div class="logo">
-                    <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="#" /></a>
                   </div>
                 </div>
               </div>
@@ -61,9 +61,9 @@
                 <div class="limit-box">
                   <nav class="main-menu ">
                     <ul class="menu-area-main">
-                      <li class="active"> <a href="{% static 'index.html' %}">Home</a> </li>
+                      <li class="active"> <a href="{% url 'home' %}">Home</a> </li>
                       <li> <a href="{% static '#vegetable' %}">Board</a> </li>
-                      <li> <a href="{% static '#about' %}">About</a> </li>
+                      <li> <a href="{% url 'about' %}">About</a> </li>
                       <li> <a href="{% static '#contact' %}">Login</a> </li>
                      </ul>
                    </nav>
