@@ -7,8 +7,9 @@ from django.db.models import Q
 # __icontains 연산자 : 대소문자를 구분하지 않고 단어가 포함되어 있는지 검사. 사용법 "필드명"__icontains = 조건값
 
 def search(request):
-    if 'kw' in request.GET:
-        query = request.GET.get('kw')
+    global query
+    if 'Vegetable' in request.GET:
+        query = request.GET.get('Vegetable')
         products = Product.objects.all().filter(
             Q(name__icontains=query) |
             Q(description__icontains=query)
