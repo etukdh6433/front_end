@@ -1,5 +1,9 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from .models import Product
+=======
+from storeapp.models import Product
+>>>>>>> a76a52d93b449df4b91bdfbdb5dda88bbef8076f
 from django.db.models import Q
 
 # filter 함수의 Q함수: OR조건으로 데이터를 조회하기 위해 사용하는 함수
