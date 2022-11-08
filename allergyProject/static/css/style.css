@@ -1386,14 +1386,15 @@ font-weight: normal;
 }
 
 .wrapper .sidebar{
-    background: rgb(154, 195, 219);
+    background: rgb(216, 241, 255);
     position: fixed;
     top: 0;
-    left: 20px;
-    width: 225px;
+    left: 30px;
+    width: 190px;
     margin-top:10%;
-    padding: 20px 0;
+    padding: 20px 10px;
     transition: all 0.5s ease;
+    border:#000 solid;
 }
 
 .table {

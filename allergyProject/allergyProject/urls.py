@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from mainapp import views as mainviews
 from searchapp import views as searchviews
+from board import views as boardviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', mainviews.home, name='home'),
     path('about/', mainviews.about, name='about'),
     path('search/', searchviews.search, name='search'),
+    path('board/', boardviews.board, name='board')
 ]
